@@ -1,0 +1,306 @@
+{
+    "user": {
+        "id": "8674",
+        "document": "1010101010",
+        "name": "Pepito",
+        "idNumberType": "C.C",
+        "samplingDate": "20 Mar. 2023",
+        "birthDate": "01 Ene. 1995",
+        "fullName": "Pepito Unigem Perez",
+        "reportDate": "14 Jun. 2023"
+    },
+    "12934922": {
+        "result": "TT",
+        "interpretation": "Tu genotipo denota disminución en la actividad para convertir β -caroteno en retinol",
+        "references": "Koike, S., Richards, M., Wong, A. et al. Fat mass and obesity-associated (FTO) rs9939609 polymorphism modifies the relationship between body mass index and affective symptoms through the life course: a prospective birth cohort study. Transl Psychiatry 8, 62 (2018). https://doi.org/10.1038/s41398-018-0110-1",
+        "genotypeEffect": "atenuado"
+    },
+    "119478057": {
+        "result": "CC",
+        "interpretation": "Tu genotipo denota una actividad normal de conversión de β-caroteno a la forma activa de la vitamina A, cuando se consume en forma normal alimentos ricos en vitamina A.",
+        "references": "Almawi WY, Nemr R, Atazhanova T, Malalla ZH, Sarray S, Mustafa FE, Mahmood NA. Differential Association of FTO Gene variants and Haplotypes with the Susceptibility to Polycystic Ovary Syndrome According To Obesity in Women with PCOS. Reprod Sci. 2023 Jan 5. doi: 10.1007/s43032-022-01149-w. Epub ahead of print. PMID: 36602653.\nAl Asoom LI, Al Afandi DT, Al Abdulhadi AS, Rafique N, Chathoth S, Al Sunni AA. Protective Association of Single Nucleotide Polymorphisms rs1861868-FTO and rs7975232-VDR and Obesity in Saudi Females. Int J Gen Med. 2020 May 27;13:235-241. doi: 10.2147/IJGM.S251466. PMID: 32547165; PMCID: PMC7266403.",
+        "genotypeEffect": "intermedio"
+    },
+    "7501331": {
+        "result": "TT",
+        "interpretation": "Tu genotipo denota un riesgo de menor actividad para la conversión de β-caroteno a la forma activa de la vitamina A. Las personas que presentan esta variante en un alelo T tanto en rs12934922 como en rs7501331 tienen un 69 % menos de conversión de betacaroteno en retinol (VitaminaA). ",
+        "references": "Najd-Hassan-Bonab L, Safarpour M, Moazzam-Jazi M, Azizi F, Daneshpour MS. The role of FTO variant rs1421085 in the relationship with obesity: a systematic review and meta-analysis. Eat Weight Disord. 2022 Dec;27(8):3053-3062. doi: 10.1007/s40519-022-01509-0. Epub 2022 Nov 25. PMID: 36434470.\nAntonio J, Knafo S, Kenyon M, Ali A, Carson C, Ellerbroek A, Weaver C, Roberts J, Peacock CA, Tartar JL. Assessment of the FTO gene polymorphisms (rs1421085, rs17817449 and rs9939609) in exercise-trained men and women: the effects of a 4-week hypocaloric diet. J Int Soc Sports Nutr. 2019 Sep 2;16(1):36. doi: 10.1186/s12970-019-0307-6. PMID: 31477138; PMCID: PMC6719365.\nGoh Y, Choi JH. Genetic variation rs1121980 in the fat mass and obesity-associated gene (FTO) is associated with dietary intake in Koreans. Food Nutr Res. 2022 Nov 16;66. doi: 10.29219/fnr.v66.8059. PMID: 36590860; PMCID: PMC9793768.",
+        "genotypeEffect": "atenuado"
+    },
+    "11645428": {
+        "result": "AG",
+        "interpretation": "Tu genotipo denota un riesgo de menor actividad para la conversión de β-caroteno a la forma activa de la vitamina A.",
+        "references": "Lietz G, Oxley A, Leung W, Hesketh J. Single nucleotide polymorphisms upstream from the β-carotene 15,15'-monoxygenase gene influence provitamin A conversion efficiency in female volunteers. J Nutr. 2012 Jan;142(1):161S-5S. doi: 10.3945/jn.111.140756. Epub 2011 Nov 23. PMID: 22113863",
+        "genotypeEffect": "atenuado"
+    },
+    "1256335": {
+        "result": "AA",
+        "interpretation": "Tu genotipo denota un riesgo estándar de deficiencia de Vitamina B6.",
+        "references": "Loohuis LM, Albersen M, de Jong S, Wu T, Luykx JJ, Jans JJM, Verhoeven-Duif NM, Ophoff RA. The Alkaline Phosphatase (ALPL) Locus Is Associated with B6 Vitamer Levels in CSF and Plasma. Genes (Basel). 2018 Dec 22;10(1):8. doi: 10.3390/genes10010008. PMID: 30583557; PMCID: PMC6357176.\nHazra, A.; Kraft, P.; Lazarus, R.; Chen, C.; Chanock, S.J.; Jacques, P.; Selhub, J.; Hunter, D.J. Genome-wide. Significant predictors of metabolites in the one-carbon metabolism pathway. Hum. Mol. Genet. 2009, 18, 4677–4687.",
+        "genotypeEffect": "intermedio"
+    },
+    "4654748": {
+        "result": "CT",
+        "interpretation": "Tienes la variante del gen NBPF3 asociada a niveles más bajos de B6, por lo que tienes más probabilidad de tener niveles disminuidos en sangre.",
+        "references": "Loohuis LM, Albersen M, de Jong S, Wu T, Luykx JJ, Jans JJM, Verhoeven-Duif NM, Ophoff RA. The Alkaline Phosphatase (ALPL) Locus Is Associated with B6 Vitamer Levels in CSF and Plasma. Genes (Basel). 2018 Dec 22;10(1):8. doi: 10.3390/genes10010008. PMID: 30583557; PMCID: PMC6357176.\nHazra, A.; Kraft, P.; Lazarus, R.; Chen, C.; Chanock, S.J.; Jacques, P.; Selhub, J.; Hunter, D.J. Genome-wide. Significant predictors of metabolites in the one-carbon metabolism pathway. Hum. Mol. Genet. 2009, 18, 4677–4687.",
+        "genotypeEffect": "atenuado"
+    },
+    "602662": {
+        "result": "AA",
+        "interpretation": "Tu genotipo denota actividad normal de la enzima FUT2, puede disminuir el riesgo de malabsorción de vitamina B12 con mayor resistencia a infecciones.  Además, El genotipo AA de FUT2 rs602662 se asocia con un IMC más bajo y un mejor perfil metabólico que los sujetos con genotipos GG+GA",
+        "references": "Nongmaithem SS, Joglekar CV, Krishnaveni GV, Sahariah SA, Ahmad M, Ramachandran S, Gandhi M, Chopra H, Pandit A, Potdar RD, H D Fall C, Yajnik CS, Chandak GR. GWAS identifies population-specific new regulatory variants in FUT6 associated with plasma B12 concentrations in Indians. Hum Mol Genet. 2017 Jul 1;26(13):2551-2564. doi: 10.1093/hmg/ddx071. Erratum in: Hum Mol Genet. 2017 Jul 1;26(13):2589. PMID: 28334792; PMCID: PMC5886186.\nSantos-Cortez RLP, et al. FUT2 Variants Confer Susceptibility to Familial Otitis Media. Am J Hum Gen. 2018. Doi: https://doi.org/10.1016/j.ajhg.2018.09.010",
+        "genotypeEffect": "intermedio"
+    },
+    "33972313": {
+        "result": "AG",
+        "interpretation": "Tu genotipo indica que tienes concentraciones bajas de ácido ascórbico sérico.\nLos polimorfismos en este gen no explican toda la variabilidad individual observada en las concentraciones séricas de ácido ascórbico y otros genes también pueden estar involucrados.\n\nLa variación genética también puede explicar parte de la variabilidad individual observada en la respuesta del ácido ascórbico sérico a la vitamina C de la dieta, con el polimorfismo común de haptoglobina y los polimorfismos de deleción al glutatión-S-transferasa, que influyen en las concentraciones de ácido ascórbico el suero.",
+        "references": "Nongmaithem SS, Joglekar CV, Krishnaveni GV, Sahariah SA, Ahmad M, Ramachandran S, Gandhi M, Chopra H, Pandit A, Potdar RD, H D Fall C, Yajnik CS, Chandak GR. GWAS identifies population-specific new regulatory variants in FUT6 associated with plasma B12 concentrations in Indians. Hum Mol Genet. 2017 Jul 1;26(13):2551-2564. doi: 10.1093/hmg/ddx071. Erratum in: Hum Mol Genet. 2017 Jul 1;26(13):2589. PMID: 28334792; PMCID: PMC5886186.\nSantos-Cortez RLP, et al. FUT2 Variants Confer Susceptibility to Familial Otitis Media. Am J Hum Gen. 2018. Doi: https://doi.org/10.1016/j.ajhg.2018.09.010",
+        "genotypeEffect": "atenuado"
+    },
+    "2282679": {
+        "result": "CC",
+        "interpretation": "La variante del alelo C de SNP rs2282679 presente en tu genoma está relacionada con la reducción de la afinidad entre la proteína y la vitamina D, disminuyendo su absorción por las células. \nTu genotipo indica niveles algo más bajos de vitamina D",
+        "references": "Ruiz-Ballesteros AI, Meza-Meza MR, Vizmanos-Lamotte B, Parra-Rojas I, de la Cruz-Mosso U. Association of Vitamin D Metabolism Gene Polymorphisms with Autoimmunity: Evidence in Population Genetic Studies. Int J Mol Sci. 2020 Dec 17;21(24):9626. doi: 10.3390/ijms21249626. PMID: 33348854; PMCID: PMC7766382",
+        "genotypeEffect": "atenuado"
+    },
+    "1544410": {
+        "result": "GA",
+        "interpretation": "Tu genotipo indica que tiene un riesgo intermedio de trastornos en la absorción de la vitamina D y el calcio con baja densidad mineral ósea.",
+        "references": "Gnagnarella P, Raimondi S, Aristarco V, Johansson HA, Bellerba F, Corso F, Gandini S. Vitamin D Receptor Polymorphisms and Cancer. Adv Exp Med Biol. 2020;1268:53-114. doi: 10.1007/978-3-030-46227-7_4. PMID: 32918214.\nSenosi MR, Fathi HM, Baki NMA, Zaki O, Magdy AM, Gheita TA. Bone mineral density, vitamin D receptor (VDR) gene polymorphisms, fracture risk assessment (FRAX), and trabecular bone score (TBS) in rheumatoid arthritis patients: connecting pieces of the puzzle. Clin Rheumatol. 2022;41(5):1333-1342. doi:10.1007/s10067-022-06048-8",
+        "genotypeEffect": "intermedio"
+    },
+    "7294": {
+        "result": "CT",
+        "interpretation": "Individuos con variantes en este gen producen la enzima VKORC1 con deficiencias a factores de coagulación dependiente de la vitamina K y una mayor resistencia o menor sensibilidad a la warfarina.",
+        "references": "Berkner KL, Runge KW. Vitamin K-Dependent Protein Activation: Normal Gamma-Glutamyl Carboxylation and Disruption in Disease. Int J Mol Sci. 2022 May 20;23(10):5759. doi: 10.3390/ijms23105759. PMID: 35628569; PMCID: PMC9146348.",
+        "genotypeEffect": "atenuado"
+    },
+    "1800562": {
+        "result": "GA",
+        "interpretation": "Tu genotipo muestra que tienes un riesgo moderado de sobrecarga de hierro.",
+        "references": "Varillas-Delgado, D., Del Coso, J., Gutiérrez-Hellín, J. et al. Genetics and sports performance: the present and future in the identification of talent for sports based on DNA testing. Eur J Appl Physiol 122, 1811–1830 (2022). https://doi.org/10.1007/s00421-022-04945-z\nFekri K, Asle Rasouli N, Tavallai Zavareh SA, Jalil M, Moradi F, Hosseinpour M, Teimori H. Hepcidin and HFE Polymorphisms and Ferritin Level in β-Thalassemia Major. Int J Hematol Oncol Stem Cell Res. 2019 Jan 1;13(1):42-48. PMID: 31205627; PMCID: PMC6557969.\nKatsarou MS, Papasavva M, Latsi R, Drakoulis N. Hemochromatosis: Hereditary hemochromatosis and HFE gene. Vitam Horm. 2019;110:201-222. doi: 10.1016/bs.vh.2019.01.010. Epub 2019 Feb 8. PMID: 30798813.",
+        "genotypeEffect": "intermedio"
+    },
+    "1801133": {
+        "result": "CT",
+        "interpretation": "Tu genotipo indica producción de la MTHFR disminuida en un 40 %, con un 65% de eficiencia en el procesamiento de ácido fólico, lo que conduce a niveles medios de homocisteína, de vitamina B9, B12 y folato",
+        "references": "Shivkar RR, Gawade GC, Padwal MK, Diwan AG, Mahajan SA, Kadam CY. Association of MTHFR C677T (rs1801133) and A1298C (rs1801131) Polymorphisms with Serum Homocysteine, Folate and Vitamin B12 in Patients with Young Coronary Artery Disease. Indian J Clin Biochem. 2022 Apr;37(2):224-231. doi: 10.1007/s12291-021-00982-1. Epub 2021 May 18. PMID: 35463099; PMCID: PMC8993972.",
+        "genotypeEffect": "intermedio"
+    },
+    "12325817": {
+        "result": "GC",
+        "interpretation": "Tu genotipo indica que tienes una disminución atenuada en las concentraciones plasmáticas de fosfatidilcolina circulante. Disminución leve de la colina.",
+        "references": "Ganz, A., Klatt, K., & Caudill, M. (2017). Common Genetic Variants Alter Metabolism and Influence Dietary Choline Requirements. Nutrients, 9(8), 837. doi:10.3390/nu9080837",
+        "genotypeEffect": "intermedio"
+    },
+    "5400": {
+        "result": "CT",
+        "interpretation": "Tu genotipo indica mayor preferencia por los alimentos altos en azúcares, posees un gen de susceptibilidad candidato para los trastornos que afectan la ingesta de alimentos.",
+        "references": "Eny KM, Wolever TM, Fontaine-Bisson B, El-Sohemy A. Genetic variant in the glucose transporter type 2 is associated with higher intakes of sugars in two distinct populations. Physiol Genomics. 2008 May 13;33(3):355-60. doi: 10.1152/physiolgenomics.00148.2007. Epub 2008 Mar 18. PMID: 18349384.  https://opensnp.org/snps/rs5400",
+        "genotypeEffect": "atenuado"
+    },
+    "757110": {
+        "result": "TG",
+        "interpretation": "Tu genotipo podría indicar mayor riesgo para desarrollar diabetes tipo 2.",
+        "references": "Bakhtiyari A, Haghani K, Bakhtiyari S, Zaimy MA, Noori-Zadeh A, Gheysarzadeh A, Darabi S, Seidkhani-Nahal A, Amraei M, Alipourfard I. Association between ABCC8 Ala1369Ser Polymorphism (rs757110 T/G) and Type 2 Diabetes Risk in an Iranian Population: A Case-Control Study. Endocr Metab Immune Disord Drug Targets. 2021;21(3):441-447. doi: 10.2174/1871530320666200713091827. PMID: 32660410.\nHaghvirdizadeh P, Sadat Haerian B. ABCC8 genetic variants and risk of diabetes mellitus. Gene. 2014 Jul 25;545(2):198-204. doi: 10.1016/j.gene.2014.04.040. Epub 2014 Apr 21. Erratum in: Gene. 2020 Jun 20;744:144686. PMID: 24768178.",
+        "genotypeEffect": "atenuado"
+    },
+    "5751876": {
+        "result": "CC",
+        "interpretation": "Tu genotipo indica que puedes tener menos probabilidades de experimentar ansiedad cuando te expones a la cafeína en comparación con las personas con el genotipo TT. Otros factores genéticos y clínicos también pueden influir en la respuesta de un individuo a la cafeína.",
+        "references": "Muñoz A, López-Samanes Á, Aguilar-Navarro M, Varillas-Delgado D, Rivilla-García J, Moreno-Pérez V, Del Coso J. Effects of CYP1A2 and ADORA2A Genotypes on the Ergogenic Response to Caffeine in Professional Handball Players. Genes (Basel). 2020 Aug 13;11(8):933. doi: 10.3390/genes11080933. PMID: 32823594; PMCID: PMC7464361.\n\neChilds E, Hohoff C, Deckert J, Xu K, Badner J, de Wit H. Association between ADORA2A and DRD2 polymorphisms and caffeine-induced anxiety. Neuropsychopharmacology. 2008 Nov;33(12):2791-800. doi: 10.1038/npp.2008.17. Epub 2008 Feb 27. PMID: 18305461; PMCID: PMC2745641. ",
+        "genotypeEffect": "optimo"
+    },
+    "2298383": {
+        "result": "TT",
+        "interpretation": "Sin variación en los niveles de ansiedad por la cafeína (cantidad promedio).",
+        "references": "Muñoz A, López-Samanes Á, Aguilar-Navarro M, Varillas-Delgado D, Rivilla-García J, Moreno-Pérez V, Del Coso J. Effects of CYP1A2 and ADORA2A Genotypes on the Ergogenic Response to Caffeine in Professional Handball Players. Genes (Basel). 2020 Aug 13;11(8):933. doi: 10.3390/genes11080933. PMID: 32823594; PMCID: PMC7464361.\n\neChilds E, Hohoff C, Deckert J, Xu K, Badner J, de Wit H. Association between ADORA2A and DRD2 polymorphisms and caffeine-induced anxiety. Neuropsychopharmacology. 2008 Nov;33(12):2791-800. doi: 10.1038/npp.2008.17. Epub 2008 Feb 27. PMID: 18305461; PMCID: PMC2745641. ",
+        "genotypeEffect": "optimo"
+    },
+    "4988235": {
+        "result": "CT",
+        "interpretation": "Tu genotipo indica que es probable que puedas digerir la leche cuando seas adulto.",
+        "references": "Nowak JK, Dybska E, Dworacka M, Tsikhan N, Kononets V, Bermagambetova S, Walkowiak J. Ileal Lactase Expression Associates with Lactase Persistence Genotypes. Nutrients. 2021 Apr 17;13(4):1340. doi: 10.3390/nu13041340. PMID: 33920682; PMCID: PMC8073975.\n\nYuan S, Sun J, Lu Y, Xu F, Li D, Jiang F, Wan Z, Li X, Qin LQ, Larsson SC. Health effects of milk consumption: phenome-wide Mendelian randomization study. BMC Med. 2022 Nov 23;20(1):455. doi: 10.1186/s12916-022-02658-w. PMID: 36424608; PMCID",
+        "genotypeEffect": "optimo"
+    },
+    "1800169": {
+        "result": "AA",
+        "interpretation": "Tu genotipo tiene una fuerza muscular normal, es decir, una menor predisposición a experimentar menor fuerza y contracción muscular a rápidas velocidades de reacción.",
+        "references": "De Mars, G.; Windelinckx, A.; Beunen, G.; Delecluse, C.; Lefevre, J.; Thomis, M.A. Polymorphisms in the CNTF and CNTF receptor genes are associated with muscle strength in men and women. J. Appl. Physiol. 2007, 102, 1824–1831, doi:10.1152/japplphysiol.00692.2006.\n\nPratt J, Boreham C, Ennis S, Ryan AW, De Vito G. Genetic Associations with Aging Muscle: A Systematic Review. Cells. 2019 Dec 19;9(1):12. doi: 10.3390/cells9010012. PMID: 31861518; PMCID: PMC7016601.",
+        "genotypeEffect": "intermedio"
+    },
+    "324640": {
+        "result": "TT",
+        "interpretation": "Tu genotipo se asocia con una mayor recuperación de la frecuencia cardíaca, tanto antes como después de un programa de entrenamiento, muestra valores más bajos de presión sanguínea diastólica en reposo al inicio y después del entrenamiento.",
+        "references": "Van de Vegte YJ, Tegegne BS, Verweij N, Snieder H, van der Harst P. Genetics and the heart rate response to exercise. Cell Mol Life Sci. 2019 Jun;76(12):2391-2409. doi: 10.1007/s00018-019-03079-4. Epub 2019 Mar 27. PMID: 30919020; PMCID: PMC6529381.\n\nKim DS, Wheeler MT, Ashley EA. The genetics of human performance. Nat Rev Genet. 2022 Jan;23(1):40-54. doi: 10.1038/s41576-021-00400-5. Epub 2021 Sep 14. PMID: 34522035.",
+        "genotypeEffect": "optimo"
+    },
+    "2470158": {
+        "result": "GG",
+        "interpretation": "Tu genotipo se asocia con la variante GG en el gen CYP19A1 pueden necesitar más apoyo para mejorar el interés para hacer ejercicio.",
+        "references": "Van de Vegte YJ, Tegegne BS, Verweij N, Snieder H, van der Harst P. Genetics and the heart rate response to exercise. Cell Mol Life Sci. 2019 Jun;76(12):2391-2409. doi: 10.1007/s00018-019-03079-4. Epub 2019 Mar 27. PMID: 30919020; PMCID: PMC6529381\n\nKim DS, Wheeler MT, Ashley EA. The genetics of human performance. Nat Rev Genet. 2022 Jan;23(1):40-54. doi: 10.1038/s41576-021-00400-5. Epub 2021 Sep 14. PMID: 34522035.",
+        "genotypeEffect": "atenuado"
+    },
+    "12405556": {
+        "result": "GT",
+        "interpretation": "Tu genotipo se asocia con una probabilidad ligeramente mayor de que usted participe en actividad física en comparación con aquellos que tienen la variante GG que tienen una probabilidad típica.",
+        "references": "Van de Vegte YJ, Tegegne BS, Verweij N, Snieder H, van der Harst P. Genetics and the heart rate response to exercise. Cell Mol Life Sci. 2019 Jun;76(12):2391-2409. doi: 10.1007/s00018-019-03079-4. Epub 2019 Mar 27. PMID: 30919020; PMCID: PMC6529381\n\nKim DS, Wheeler MT, Ashley EA. The genetics of human performance. Nat Rev Genet. 2022 Jan;23(1):40-54. doi: 10.1038/s41576-021-00400-5. Epub 2021 Sep 14. PMID: 34522035.",
+        "genotypeEffect": "optimo"
+    },
+    "9939609": {
+        "result": "AT",
+        "interpretation": "Tu genotipo se asocia a un riesgo medio para desarrollar obesidad e IMC mayor.",
+        "references": "Koike, S., Richards, M., Wong, A. et al. Fat mass and obesity-associated (FTO) rs9939609 polymorphism modifies the relationship between body mass index and affective symptoms through the life course: a prospective birth cohort study. Transl Psychiatry 8, 62 (2018). https://doi.org/10.1038/s41398-018-0110-1",
+        "genotypeEffect": "intermedio"
+    },
+    "1861868": {
+        "result": "AT",
+        "interpretation": "Tu genotipo denota un riego estándar para desarrollar obesidad e IMC normal.\nLos alelos menores, \"T\" de FTO podrían ser factores protectores contra el aumento del IMC en mujeres jóvenes saudíes. ",
+        "references": "Almawi WY, Nemr R, Atazhanova T, Malalla ZH, Sarray S, Mustafa FE, Mahmood NA. Differential Association of FTO Gene variants and Haplotypes with the Tusceptibility to Polycystic Ovary Syndrome According To Obesity in Women with PCOS. Reprod Sci. 2023 Jan 5. doi: 10.1007/s43032-022-01149-w. Epub ahead of print. PMID: 36602653.\n\nAl Asoom LI, Al Afandi DT, Al Abdulhadi AS, Rafique N, Chathoth S, Al Tunni AA. Protective Association of Single Nucleotide Polymorphisms rs1861868-FTO and rs7975232-VDR and Obesity in Saudi Females. Int J Gen Med. 2020 May 27;13:235-241. doi: 10.2147/IJGM.S251466. PMID: 32547165; PMCID: PMC7266403.",
+        "genotypeEffect": "intermedio"
+    },
+    "1121980": {
+        "result": "GT",
+        "interpretation": "Presentas riesgo medio para desarrollar obesidad.",
+        "references": "Goh Y, Choi JH. Genetic variation rs1121980 in the fat mass and obesity-associated gene (FTO) is associated with dietary intake in Koreans. Food Nutr Res. 2022 Nov 16;66. doi: 10.29219/fnr.v66.8059. PMID: 36590860; PMCID: PMC9793768.",
+        "genotypeEffect": "intermedio"
+    },
+    "17817449": {
+        "result": "GT",
+        "interpretation": "Tu genotipo denota un riesgo intermedio para desarrollar obesidad, y nivel de saciabilidad intermedio",
+        "references": "Lietz G, Oxley A, Leung W, Hesketh J. Single nucleotide polymorphisms upstream from the β-carotene 15,15'-monoxygenase gene influence provitamin A conversion efficiency in female volunteers. J Nutr. 2012 Jan;142(1):161S-5S. doi: 10.3945/jn.111.140756. Epub 2011 Nov 23. PMID: 22113863",
+        "genotypeEffect": "intermedio"
+    },
+    "1421085": {
+        "result": "CT",
+        "interpretation": "Presentas riesgo medio para desarrollar obesidad.",
+        "references": "Najd-Hassan-Bonab L, Safarpour M, Moazzam-Jazi M, Azizi F, Daneshpour MS. The role of FTO variant rs1421085 in the relationship with obesity: a systematic review and meta-analysis. Eat Weight Disord. 2022 Dec;27(8):3053-3062. doi: 10.1007/s40519-022-01509-0. Epub 2022 Nov 25. PMID: 36434470.\n\nAntonio J, Knafo S, Kenyon M, Ali A, Carson C, Ellerbroek A, Weaver C, Roberts J, Peacock CA, Tartar JL. Assessment of the FTO gene polymorphisms (rs1421085, rs17817449 and rs9939609) in exercise-trained men and women: the effects of a 4-week hypocaloric diet. J Int Soc Sports Nutr. 2019 Sep 2;16(1):36. doi: 10.1186/s12970-019-0307-6. PMID: 31477138; PMCID: PMC6719365.",
+        "genotypeEffect": "intermedio"
+    },
+    "679620": {
+        "result": "GG",
+        "interpretation": "Tu genotipo se asocia a un riesgo menor a sufrir tendinopatía de Aquiles.",
+        "references": "Ribbans WJ, September AV, Collins M. Tendon and Ligament Genetics: How Do They Contribute to Disease and Injury? A Narrative Review. Life (Basel). 2022 Apr 29;12(5):663. doi: 10.3390/life12050663. PMID: 35629331; PMCID: PMC9147569.\n\nNie G, Wen X, Liang X, Zhao H, Li Y, Lu J. Additional evidence supports association of common genetic variants in MMP3 and TIMP2 with increased risk of chronic Achilles tendinopathy susceptibility. J Sci Med Sport. 2019 Oct;22(10):1074-1078. doi: 10.1016/j.jsams.2019.05.021. Epub 2019 Jun 7. PMID: 31208828.",
+        "genotypeEffect": "optimo"
+    },
+    "1572312": {
+        "result": "CA",
+        "interpretation": "Tu genotipo muestra está relacionado con una mayor resistencia física. Lo que es ventajoso para el ejercicio de resistencia, te puedes beneficiar con actividades como el entrenamiento funcional y crossfit.",
+        "references": "Ribbans WJ, September AV, Collins M. Tendon and Ligament Genetics: How Do They Contribute to Disease and Injury? A Narrative Review. Life (Basel). 2022 Apr 29;12(5):663. doi: 10.3390/life12050663. PMID: 35629331; PMCID: PMC9147569.\n\nNie G, Wen X, Liang X, Zhao H, Li Y, Lu J. Additional evidence supports association of common genetic variants in MMP3 and TIMP2 with increased risk of chronic Achilles tendinopathy susceptibility. J Sci Med Sport. 2019 Oct;22(10):1074-1078. doi: 10.1016/j.jsams.2019.05.021. Epub 2019 Jun 7. PMID: 31208828.",
+        "genotypeEffect": "optimo"
+    },
+    "12594956": {
+        "result": "CC",
+        "interpretation": "Tu variante CC muestra un nivel de resistencia en respuesta al entrenamiento estándar.",
+        "references": "Eynon N, Ruiz JR, Bishop DJ, Santiago C, Gómez-Gallego F, Lucia A, Birk R. The rs12594956 polymorphism in the NRF-2 gene is associated with top-level Spanish athlete's performance status. J Sci Med Sport. 2013 Mar;16(2):135-9. doi: 10.1016/j.jsams.2012.05.004. Epub 2012 Jun 30. PMID: 22749526.",
+        "genotypeEffect": "intermedio"
+    },
+    "4253778": {
+        "result": "GC",
+        "interpretation": "Los portadores del alelo C también tienen una hipertrofia significativa del músculo esquelético (debido a un mayor porcentaje de fibras de contracción rápida), lo que puede facilitar la utilización de la glucosa en respuesta al ejercicio anaeróbico, y resulta en una mayor masa muscular.\nPPARA Pueden tener mejores resultados en fuerza explosiva y exhibir medidas de fuerza de velocidad más altas en la Prueba de Wingate de 30 s (WT30).",
+        "references": "Maciejewska-Skrendo A, Mieszkowski J, Kochanowicz A, Niespodziński B, Cieszczyk P, Leźnicka K, Leońska-Duniec A, Kolbowicz M, Kaczmarczyk M, Piskorska E, Stankiewicz B, Stępniak R, Mostowik A, Zawartka M, Rzeszutko-Bełzowska A, Massidda M, Caló CM, Kemerytė-Riaubienė E, Sawczuk M. Does the PPARA Intron 7 Gene Variant (rs4253778) Influence Performance in Power/Strength-Oriented Athletes? A Case-Control Replication Study in Three Cohorts of European Gymnasts. J Hum Kinet. 2021 Jul 28;79:77-85. doi: 10.2478/hukin-2020-0060. PMID: 34400988; PMCID: PMC8336554.\n\nAhmetov II, Hall ECR, Semenova EA, Pranckevičienė E, Ginevičienė V. Advances in sports genomics. Adv Clin Chem. 2022;107:215-263. doi: 10.1016/bs.acc.2021.07.004. Epub 2021 Aug 23. PMID: 35337603.",
+        "genotypeEffect": "optimo"
+    },
+    "1815739": {
+        "result": "TT",
+        "interpretation": "El genotipo TT se caracteriza por el déficit de la proteína alfa-actinina 3, presentan una predisposición a un mejor rendimiento en actividades de resistencia, generalmente actividades de larga duración, como ciclismo y corredores de largas distancias, entre otros. Tienen aumentada las fibras de tipo I, o de contracción lenta.",
+        "references": "Papadimitriou, I.D., Lucia, A., Pitsiladis, Y.P. et al. ACTN3 R577X and ACE I/D gene variants influence performance in elite sprinters: a multi-cohort study. BMC Genomics 17, 285 (2016). https://doi.org/10.1186/s12864-016-2462-3\nAhmetov II, Egorova ES, Gabdrakhmanova LJ, Fedotovskaya ON. Genes and Athletic Performance: An Update. Med Sport Sci. 2016;61:41-54. doi: 10.1159/000445240. Epub 2016 Jun 10. Review. PubMed: 27287076",
+        "genotypeEffect": "optimo"
+    },
+    "1042713": {
+        "result": "CC",
+        "interpretation": "Tu genotipo ha demostrado que cualquier tipo de ejercicio responde bien para la pérdida de peso y ha demostrado una regulación de lipolisis apropiada.",
+        "references": "Mitra SR, Tan PY, Amini F. Association of ADRB2 rs1042713 with Obesity and Obesity-Related Phenotypes and Its Interaction with Dietary Fat in Modulating Glycaemic Indices in Malaysian Adults. J Nutr Metab. 2019 Mar 17;2019:8718795. doi: 10.1155/2019/8718795. PMID: 31007954; PMCID: PMC6441509.\n\nHennis PJ, O'Doherty AF, Levett DZ, Grocott MP, Montgomery HM. Genetic factors associated with exercise performance in atmospheric hypoxia. Sports Med. 2015 May;45(5):745-61. doi: 10.1007/s40279-015-0309-8. PMID: 25682119; PMCID: PMC4544548.",
+        "genotypeEffect": "optimo"
+    },
+    "2267668": {
+        "result": "AA",
+        "interpretation": "Tu genotipo está asociado con una predisposición a ganar masa muscular con mayor facilidad, y al aumento en los niveles de triglicéridos.",
+        "references": "Maciejewska-Skrendo, A.; Massidda, M.; Tocco, F.; Leźnicka, K. The Influence of the Differentiation of Genes Encoding Peroxisome Proliferator-Activated Receptors and Their Coactivators on Nutrient and Energy Metabolism. Nutrients 2022, 14, 5378. https://doi.org/10.3390/nu14245378.",
+        "genotypeEffect": "intermedio"
+    },
+    "1801282": {
+        "result": "CG",
+        "interpretation": "Tu genotipo está asociado a un mayor riesgo no confirmado de enfermedad cardiovascular con una dieta rica en grasas saturadas.",
+        "references": "Maciejewska-Skrendo, A.; Massidda, M.; Tocco, F.; Leźnicka, K. The Influence of the Differentiation of Genes Encoding Peroxisome Proliferator-Activated Receptors and Their Coactivators on Nutrient and Energy Metabolism. Nutrients 2022, 14, 5378. https://doi.org/10.3390/nu14245378.",
+        "genotypeEffect": "atenuado"
+    },
+    "755017": {
+        "result": "GG",
+        "interpretation": "Tu genotipo es favorable para longitud de los telómeros, el envejecimiento de tus células puede darse con menor intensidad.",
+        "references": "Delgado DA, Zhang C, Chen LS, Gao J, Roy S, Shinkle J, Sabarinathan M, Argos M, Tong L, Ahmed A, Islam T, Rakibuz-Zaman M, Sarwar G, Shahriar H, Rahman M, Yunus M, Jasmine F, Kibriya MG, Ahsan H, Pierce BL. Genome-wide association study of telomere length among South Asians identifies a second RTEL1 association signal. J Med Genet. 2018 Jan;55(1):64-71. doi: 10.1136/jmedgenet-2017-104922. Epub 2017 Nov 18. PMID: 29151059; PMCID: PMC5749304.\n\nWang S, Chang E, Byanyima P, Huang P, Sanyu I, Musisi E, Sessolo A, Davis JL, Worodria W, Huang L, Lin J; Inflammation, Aging, Microbes and Obstructive Lung Disease (I AM OLD) Study. Association between common telomere length genetic variants and telomere length in an African population and impacts of HIV and TB. J Hum Genet. 2019 Oct;64(10):1033-1040. doi: 10.1038/s10038-019-0646-9. Epub 2019 Aug 6. PMID: 31388112; PMCID: PMC7039711.",
+        "genotypeEffect": "optimo"
+    },
+    "10490924": {
+        "result": "GT",
+        "interpretation": "Esta variante ha sido relacionada con riesgo medio de desarrollar degeneración muscular relacionada con la edad.",
+        "references": "Kozhevnikova OS, Fursova AZ, Derbeneva AS, Nikulich IF, Tarasov MS, Devyatkin VA, Rumyantseva YV, Telegina DV, Kolosova NG. Association between Polymorphisms in CFH, ARMS2, CFI, and C3 Genes and Response to Anti-VEGF Treatment in Neovascular Age-Related Macular Degeneration. Biomedicines. 2022 Jul 10;10(7):1658. doi: 10.3390/biomedicines10071658. PMID: 35884963; PMCID: PMC9312436.",
+        "genotypeEffect": "intermedio"
+    },
+    "4680": {
+        "result": "GG",
+        "interpretation": "Los portadores de este genotipo tienen mayor actividad enzimática, por lo tanto, niveles más bajos de dopamina en el cerebro, mayor umbral de dolor, mejor resiliencia al estrés, aunque con una modesta reducción en el desempeño de la cognición ejecutiva en la mayoría de las condiciones. Tienen un riesgo de cáncer ligeramente mayor. La dosis diaria requerida de vitamina E generalmente la obtienen de los nutrientes y no requiere suplementación con vitamina E. ",
+        "references": "Chmielowiec K, Chmielowiec J, Masiak J, Strońska-Pluta A, Śmiarowska M, Boroń A, Grzywacz A. Associations between the COMT rs4680 Gene Polymorphism and Personality Dimensions and Anxiety in Patients with a Diagnosis of Other Stimulants Dependence. Genes (Basel). 2022 Sep 30;13(10):1768. doi: 10.3390/genes13101768. PMID: 36292653; PMCID: PMC9601926.\nIoannidis K, Redden SA, Valle S, Chamberlain SR, Grant JE. Problematic internet use: an exploration of associations between cognition and COMT rs4818, rs4680 haplotypes. CNS Spectr. 2020 Jun;25(3):409-418. doi: 10.1017/S1092852919001019. Epub 2019 Jun 4. PMID: 31159911; PMCID: PMC7292732.",
+        "genotypeEffect": "atenuado"
+    },
+    "174547": {
+        "result": "CC",
+        "interpretation": "Dado que posees la variante CC del gen FADS1, existe un mayor riesgo de tener colesterol HDL circulante más bajo. Este genotipo CC está asociado a un menor procesamiento de ácidos grasos esenciales, omega-6 y omega-3 y, por tanto, podrías tener niveles disminuidos del colesterol “bueno” en sangre. Te recomendamos incrementar la ingesta de alimentos ricos en omega-3.",
+        "references": "Žák A, Jáchymová M, Burda M, Staňková B, Zeman M, Slabý A, Vecka M, Šeda O. FADS Polymorphisms Affect the Clinical and Biochemical Phenotypes of Metabolic Syndrome. Metabolites. 2022 Jun 20;12(6):568. doi: 10.3390/metabo12060568. PMID: 35736500; PMCID: PMC9228863\nColtell O, Sorlí JV, Asensio EM, Barragán R, González JI, Giménez-Alba IM, Zanón-Moreno V, Estruch R, Ramírez-Sabio JB, Pascual EC, Ortega-Azorín C, Ordovas JM, Corella D. Genome-Wide Association Study for Serum Omega-3 and Omega-6 Polyunsaturated Fatty Acids: Exploratory Analysis of the Sex-Specific Effects and Dietary Modulation in Mediterranean Subjects with Metabolic Syndrome. Nutrients. 2020 Jan 24;12(2):310. doi: 10.3390/nu12020310. PMID: 31991592; PMCID: PMC7071282.\nColtell O, Sorlí JV, Asensio EM, Barragán R, González JI, Giménez-Alba IM, Zanón-Moreno V, Estruch R, Ramírez-Sabio JB, Pascual EC, Ortega-Azorín C, Ordovas JM, Corella D. Genome-Wide Association Study for Serum Omega-3 and Omega-6 Polyunsaturated Fatty Acids: Exploratory Analysis of the Sex-Specific Effects and Dietary Modulation in Mediterranean Subjects with Metabolic Syndrome. Nutrients. 2020 Jan 24;12(2):310. doi: 10.3390/nu12020310. PMID: 31991592; PMCID: PMC7071282. ",
+        "genotypeEffect": "atenuado"
+    },
+    "322458": {
+        "result": "GG",
+        "interpretation": "Tu genotipo denota una variante GG que se relaciona con un mayor riesgo a foto-envejecimiento.",
+        "references": "Le Clerc S, Taing L, Ezzedine K, Latreille J, Delaneau O, Labib T, Coulonges C, Bernard A, Melak S, Carpentier W, Malvy D, Jdid R, Galan P, Hercberg S, Morizot F, Guinot C, Tschachler E, Zagury JF. A genome-wide association study in Caucasian women points out a putative role of the STXBP5L gene in facial photoaging. J Invest Dermatol. 2013 Apr;133(4):929-35. doi: 10.1038/jid.2012.458. Epub 2012 Dec 6. PMID: 23223146.",
+        "genotypeEffect": "atenuado"
+    },
+    "1695": {
+        "result": "GG",
+        "interpretation": "Tu genotipo denota una variante GG que se relaciona con un riesgo mayor a sufrir asma y sus complicaciones. En ciertas poblaciones se ha detectado que esta variante incrementa un 3,5 veces mayor riesgo de sufrir el asma.",
+        "references": "Mukhammadiyeva GF, Bakirov AB, Karimov DO, Ziatdinova MM, Valova YV, Borisova AI, Distanova AA. Analysis of the GSTP1 rs1695 polymorphism association with the development of asthma and phenotypic manifestations. J Asthma. 2022 Jun;59(6):1065-1069. doi: 10.1080/02770903.2021.1910295. Epub 2021 Apr 9. PMID: 33781157.",
+        "genotypeEffect": "atenuado"
+    },
+    "9287638": {
+        "result": "AC",
+        "interpretation": "Tu genotipo denota una variante AC que se relaciona con un riesgo intermedio a sufrir calvicie.",
+        "references": "Heilmann-Heimbach S, Hochfeld LM, Paus R, Nöthen MM. Hunting the genes in male-pattern alopecia: how important are they, how close are we and what will they tell us? Exp Dermatol. 2016 Apr;25(4):251-7. doi: 10.1111/exd.12965. Epub 2016 Feb 26. PMID: 26843402.\nLi R, Brockschmidt FF, Kiefer AK, Stefansson H, Nyholt DR, Song K, Vermeulen SH, Kanoni S, Glass D, Medland SE, Dimitriou M, Waterworth D, Tung JY, Geller F, Heilmann S, Hillmer AM, Bataille V, Eigelshoven S, Hanneken S, Moebus S, Herold C, den Heijer M, Montgomery GW, Deloukas P, Eriksson N, Heath AC, Becker T, Sulem P, Mangino M, Vollenweider P, Spector TD, Dedoussis G, Martin NG, Kiemeney LA, Mooser V, Stefansson K, Hinds DA, Nöthen MM, Richards JB. Six novel susceptibility Loci for early-onset androgenetic alopecia and their unexpected association with common diseases. PLoS Genet. 2012 May;8(5):e1002746. doi: 10.1371/journal.pgen.1002746. Epub 2012 May 31. PMID: 22693459; PMCID: PMC3364959.",
+        "genotypeEffect": "intermedio"
+    },
+    "756853": {
+        "result": "AG",
+        "interpretation": "Tu genotipo denota un riesgo estándar a la calvicie.",
+        "references": "Brockschmidt FF, Heilmann S, Ellis JA, Eigelshoven S, Hanneken S, Herold C, Moebus S, Alblas MA, Lippke B, Kluck N, Priebe L, Degenhardt FA, Jamra RA, Meesters C, Jöckel KH, Erbel R, Harrap S, Schumacher J, Fröhlich H, Kruse R, Hillmer AM, Becker T, Nöthen MM. Susceptibility variants on chromosome 7p21.1 suggest HDAC9 as a new candidate gene for male-pattern baldness. Br J Dermatol. 2011 Dec;165(6):1293-302. doi: 10.1111/j.1365-2133.2011.10708.x. PMID: 22032556.",
+        "genotypeEffect": "intermedio"
+    },
+    "9652490": {
+        "result": "AG",
+        "interpretation": "Tu genotipo denota un riesgo relativo ligeramente aumentado de Temblor esencial y enfermedad de Parkinson.",
+        "references": "Deng H, Gu S, Jankovic J. LINGO1 variants in essential tremor and Parkinson's disease. Acta Neurol Scand. 2012 Jan;125(1):1-7. doi: 10.1111/j.1600-0404.2011.01516.x. Epub 2011 Apr 7. PMID: 21470193.\nVilariño-Güell C, Ross OA, Wider C, Jasinska-Myga B, Cobb SA, Soto-Ortolaza AI, Kachergus JM, Keeling BH, Dachsel JC, Melrose HL, Behrouz B, Wszolek ZK, Uitti RJ, Aasly JO, Rajput A, Farrer MJ. LINGO1 rs9652490 is associated with essential tremor and Parkinson disease. Parkinsonism Relat Disord. 2010 Feb;16(2):109-11. doi: 10.1016/j.parkreldis.2009.08.006. Epub 2009 Aug 31. PMID: 19720553; PMCID: PMC2844122.",
+        "genotypeEffect": "intermedio"
+    },
+    "4880": {
+        "result": "TT",
+        "interpretation": "Tu genotipo podría ser desfavorable para eventos deportivos de alta intensidad, con un mayor riesgo de daño muscular inducido por la actividad física. ",
+        "references": "Maciejewska-Skrendo A, Cięszczyk P, Chycki J, Sawczuk M, Smółka W. Genetic Markers Associated with Power Athlete Status. J Hum Kinet. 2019 Aug 21;68:17-36. doi: 10.2478/hukin-2019-0053. PMID: 31531130; PMCID: PMC6724599.\nAhmetov II, Naumov VA, Donnikov AE, Maciejewska-Karłowska A, Kostryukova ES, Larin AK, Maykova EV, Alexeev DG, Fedotovskaya ON, Generozov EV, Jastrzębski Z, Zmijewski P, Kravtsova OA, Kulemin NA, Leonska-Duniec A, Martykanova DS, Ospanova EA, Pavlenko AV, Podol'skaya AA, Sawczuk M, Alimova FK, Trofimov DY, Govorun VM, Cieszczyk P. SOD2 gene polymorphism and muscle damage markers in elite athletes. Free Radic Res. 2014 Aug;48(8):948-55. doi: 10.3109/10715762.2014.928410. Epub 2014 Jun 23. PMID: 24865797.",
+        "genotypeEffect": "intermedio"
+    },
+    "7903146": {
+        "result": "TC",
+        "interpretation": "Tu genotipo presenta un riesgo medio de presentar diabetes tipo 2",
+        "references": "https://www.geneticlifehacks.com/type-ii-diabetes-genetic-connects/\nhttps://opensnp.org/snps/rs7903146\nhttps://www.snpedia.com/index.php/Rs7903146\nhttps://www.elsevier.es/es-revista-clinica-e-investigacion-arteriosclerosis-15-articulo-consistente-asociacion-del-polimorfismo-rs7903146-S0214916811001033\nhttps://www.ncbi.nlm.nih.gov/gene?Db=gene&Cmd=DetailsSearch&Term=6934.",
+        "genotypeEffect": "intermedio"
+    },
+    "2075650": {
+        "result": "AG",
+        "interpretation": "La variante G determina 2 veces mayor riesgo de alzheimer en individuos caucásicos, pero no en chinos. Faltan estudios que evidencien el riesgo en población latinoamericana. Diferentes factores ambientales, como estilos de vida o los hábitos dietéticos pueden desempeñar un papel en esta diferencia. Los individuos de diferentes ancestros genéticos exhiben patrones divergentes de desequilibrio de ligamiento (LD) y frecuencia alélica.",
+        "references": "He Y, Li C, Yang Y, Li Y, Wang Y, Yang H, Jin T, Chen S. Meta-analysis of the rs2075650 polymorphism and risk of Alzheimer disease. Aging Clin Exp Res. 2016 Oct;28(5):805-11. doi: 10.1007/s40520-015-0489-y. Epub 2015 Nov 14. PMID: 26572157.\nHuang H, Zhao J, Xu B, Ma X, Dai Q, Li T, Xue F, Chen B. The TOMM40 gene rs2075650 polymorphism contributes to Alzheimer's disease in Caucasian, and Asian populations. Neurosci Lett. 2016 Aug 15;628:142-6. doi: 10.1016/j.neulet.2016.05.050. Epub 2016 Jun 18. PMID: 27328316.",
+        "genotypeEffect": "intermedio"
+    },
+    "12722": {
+        "result": "CC",
+        "interpretation": "Tu genotipo denota una menor probabilidad de sufrir lesiones en el ligamento cruzado anterior de la rodilla o en el tendón de Aquiles en caucásicos, pero no en asiáticos.",
+        "references": "Lv ZT, Gao ST, Cheng P, Liang S, Yu SY, Yang Q, Chen AM. Association between polymorphism rs12722 in COL5A1 and musculoskeletal soft tissue injuries: a systematic review and meta-analysis. Oncotarget. 2017 Dec 27;9(20):15365-15374. doi: 10.18632/oncotarget.23805. PMID: 29632650; PMCID: PMC5880610.\nGuo R, Ji Z, Gao S, Aizezi A, Fan Y, Wang Z, Ning K. Association of COL5A1 gene polymorphisms and musculoskeletal soft tissue injuries: a meta-analysis based on 21 observational studies. J Orthop Surg Res. 2022 Mar 3;17(1):129. doi: 10.1186/s13018-022-03020-9. PMID: 35241120; PMCID: PMC8895797.",
+        "genotypeEffect": "optimo"
+    }
+}
