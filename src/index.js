@@ -6,7 +6,10 @@ import genotypesByReferenceSnp from './routes/genotypesByReferenceSnp';
 import genotypesEffects from './routes/genotypesEffects';
 import interpretations from './routes/interpretations';
 import referenceSnp from './routes/referenceSnp';
+import { login, users } from './routes/users';
+
 import dotenv from 'dotenv';
+import authorizationMiddleware from './routes/authorizationMiddleware';
 
 dotenv.config();
 
@@ -16,6 +19,8 @@ app.use(express.json());
 app.get('/test', (_, res) => {
     res.send('Online :D');
 });
+
+app.use(authorizationMiddleware);
 app.use(reportGenerator);
 app.use(reports);
 app.use(genotypes);
@@ -23,5 +28,7 @@ app.use(genotypesByReferenceSnp);
 app.use(genotypesEffects);
 app.use(interpretations);
 app.use(referenceSnp);
+app.use(login);
+app.use(users);
 
 app.listen(8080)

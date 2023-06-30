@@ -28,7 +28,6 @@ router.get(`${ROUTE}/schema`, async (req, res) => {
 
 router.post(ROUTE, async (req, res) => {
     const { rs_name, references } = req.body;
-    console.log({rs_name, references});
     try {
         const response = await postgres.query(
             `

@@ -48,7 +48,6 @@ router.put(ROUTE, async (req, res) => {
 
 router.delete(ROUTE, async (req, res) => {
     const { id } = req.body;
-    console.log('deleting', req.body);
     try {
         const response = await postgres.query(`DELETE FROM ${TABLE} WHERE id = $1 RETURNING id`, [id]);
         res.json({ message: 'deleted', id: response.rows[0].id });
