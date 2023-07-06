@@ -8,8 +8,8 @@ export class PostgressRepository {
             user: process.env.PGUSER,
             database: process.env.PGDATABASE,
             password: process.env.PGPASSWORD,
-            port: parseInt(process.env.PGPORT || '5432') ,
-            ssl: process.env.NODE_ENV === 'development' ? { rejectUnauthorized: false } : true,
+            port: parseInt(process.env.PGPORT) ,
+            ssl: { rejectUnauthorized: false },
         });
     }
     async query(query, values) {
