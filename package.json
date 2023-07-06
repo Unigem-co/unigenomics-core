@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "babel ./src -d dist/",
-    "start": "npm install && NODE_ENV=development nodemon --exec babel-node ./src/index.js"
+    "start": "npm install && NODE_ENV=development nodemon --exec babel-node ./src/index.js",
+    "serve:start": "npm run build && npm run serve:stop && npm install && NODE_ENV=production forever start ./dist/index.js",
+    "serve:stop": "forever stop ./dist/index.js"
   },
   "keywords": [
     "unigenomics"
@@ -20,6 +22,7 @@
     "dotenv": "^16.3.1",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
+    "forever": "^4.0.3",
     "html-pdf": "^3.0.1",
     "jsonwebtoken": "^9.0.0",
     "libreoffice-convert": "^1.4.1",
