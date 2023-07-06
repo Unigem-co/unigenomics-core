@@ -6,7 +6,7 @@
   "scripts": {
     "build": "babel ./src -d dist/",
     "start": "npm install && NODE_ENV=development nodemon --exec babel-node ./src/index.js",
-    "serve:start": "npm run build && npm run serve:stop && npm install && NODE_ENV=production forever start ./dist/index.js",
+    "serve:start": "npm install && npm run build && npm run serve:stop && NODE_ENV=production forever start ./dist/index.js",
     "serve:stop": "forever stop ./dist/index.js"
   },
   "keywords": [
