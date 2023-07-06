@@ -6,7 +6,7 @@ import { restart } from 'nodemon';
 const postgres = new PostgressRepository();
 
 const authorizationMiddleware = async (req, res, next) => {
-    if (req.url === '/users/login') {
+    if (req.url === '/api/users/login' || req.url === '/api/test') {
         next();
     } else {
         const bearerHeader = (req.headers['Authorization'] || req.headers['authorization'] || '');

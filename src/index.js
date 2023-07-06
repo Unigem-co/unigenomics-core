@@ -1,4 +1,4 @@
-import express from 'express';
+import express, { Router } from 'express';
 import reportGenerator from './routes/reportGenerator';
 import reports from './routes/report';
 import genotypes from './routes/genotypes';
@@ -16,19 +16,22 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 
-app.get('/test', (_, res) => {
+const testRouter = Router();
+testRouter.get('test', (_, res) => {
     res.send('Online :D');
 });
 
+app.get('/api', testRouter);
+
 app.use(authorizationMiddleware);
 app.use(reportGenerator);
-app.use(reports);
-app.use(genotypes);
-app.use(genotypesByReferenceSnp);
-app.use(genotypesEffects);
-app.use(interpretations);
-app.use(referenceSnp);
-app.use(login);
-app.use(users);
+app.use('/api', reports);
+app.use('/api', genotypes);
+app.use('/api', genotypesByReferenceSnp);
+app.use('/api', genotypesEffects);
+app.use('/api', interpretations);
+app.use('/api', referenceSnp);
+app.use('/api', login);
+app.use('/api', users);
 
 app.listen(8080)
