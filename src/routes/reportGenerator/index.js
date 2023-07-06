@@ -6,8 +6,36 @@ import libre from 'libreoffice-convert';
 import fs from "fs";
 import path from "path";
 import { promisify } from 'util';
+import { PostgressRepository } from '../../postgresql/postgrees';
+import { readableDate } from '../../utils';
 
+const postgres = new PostgressRepository();
 const lib_convert = promisify(libre.convert)
+
+const RESULT_QUERY = `
+    SELECT RIGHT('0000000000' || users.id::text, 10) AS id, users.name, users.name || ' ' || users.last_names as "fullName", 
+            users.document_type as "idNumberType", users.document, users.birdth_date as "birthDate",
+            reports.report_date as "reportDate", reports.sampling_date as "samplingDate", 
+            reference_snp.rs_name as "rs", reference_snp.references as "references",
+            genotypes.genotype_name as "result",
+            interpretations.interpretation as "interpretation",
+            genotype_effects.name as "genotypeEffect"
+    FROM reports
+    INNER JOIN reports_detailed
+    ON reports.id = reports_detailed.parent
+    INNER JOIN users
+    ON users.id = reports.user
+    INNER JOIN reference_snp
+    ON reference_snp.id = reports_detailed.reference_snp
+    INNER JOIN interpretations
+    ON interpretations.genotype = reports_detailed.result
+    AND interpretations.reference_snp = reference_snp.id
+    INNER JOIN genotypes
+    ON reports_detailed.result = genotypes.id
+    INNER JOIN genotype_effects
+    ON genotype_effects.id = reports_detailed.genotype_effect
+    WHERE reports.id = $1
+`
 
 const router = Router();
 const configureImageModule = () => {
@@ -29,6 +57,35 @@ const configureImageModule = () => {
 
     return new ImageModule(opts);
 };
+
+const getReportData = async reportId => {
+    try {
+        const reportResult = (await postgres.query(RESULT_QUERY, [reportId])).rows;
+        const user = {
+            id: reportResult[0].id,
+            document: reportResult[0].document,
+            name: reportResult[0].name,
+            idNumberType: reportResult[0].idNumberType,
+            samplingDate: readableDate(reportResult[0].samplingDate),
+            birthDate: readableDate(reportResult[0].birthDate),
+            fullName: reportResult[0].fullName,
+            reportDate: readableDate(reportResult[0].reportDate),
+        };
+        const results = reportResult.reduce((prev, curr) => ({
+            ...prev,
+            [curr.rs]: {
+                result: curr.result,
+                interpretation: curr.interpretation,
+                references: curr.references,
+                genotypeEffect: curr.genotypeEffect,
+            }
+        }), {});
+
+        return { user, ...results };
+    } catch(error) {
+        throw error;
+    }
+}
 
 const generatePDF = async (document, userId) => {
     const docxResultPath = path.resolve(__dirname, `result-${userId}-${Date.now()}.docx`);
@@ -63,8 +120,9 @@ const generateReplacements = (data) => {
     }, { images });
 };
 
-router.post('/generate-report', async (req, res) => {
-    const data = req.body;
+router.post('/generate-report/:id', async (req, res) => {
+    const {params: { id }} = req;
+    const data = await getReportData(id);
     try {
         // Load the docx file as binary content
         const content = fs.readFileSync(
@@ -98,7 +156,7 @@ router.post('/generate-report', async (req, res) => {
         });
     } catch(error) {
         res.status(500).send('Unable to generate report');
-    }    
+    }
 });
 
 export default router;

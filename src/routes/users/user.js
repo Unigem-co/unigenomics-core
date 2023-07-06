@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { PostgressRepository } from "../../postgresql/postgrees";
-import { schemaQuery } from "../../utils";
+import { readableDate, schemaQuery } from "../../utils";
 import bcrypt from 'bcrypt';
 
 const router = Router();
@@ -16,12 +16,10 @@ router.get(ROUTE, async (req, res) => {
         const users = userResponse.rows;
         res.json(users.map(user => {
             user.password = '';
-            const year = user.birdth_date.getFullYear();
-            const month = user.birdth_date.getMonth() + 1 > 9 ? user.birdth_date.getMonth() + 1 : `0${user.birdth_date.getMonth() + 1}`;
-            const day = user.birdth_date.getDate() > 9 ? user.birdth_date.getDate() : `0${user.birdth_date.getDate() }`
+            const date = readableDate(user.birdth_date);
             return {
                 ...user,
-                birdth_date: `${year}-${month}-${day}`
+                birdth_date: date
             };
         }));
     } catch (error) {
@@ -60,7 +58,6 @@ router.post(ROUTE, async (req, res) => {
     const { name, last_names, document_type, document, birdth_date, role } = req.body;
     const salt = await bcrypt.genSalt();
     const newPassword = await bcrypt.hash(document, salt);
-    console.log(newPassword);
     try {
         const response = await postgres.query(
             `

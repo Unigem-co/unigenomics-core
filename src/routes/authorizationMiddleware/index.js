@@ -21,7 +21,13 @@ const authorizationMiddleware = async (req, res, next) => {
                     if(role === 'admin') {
                         next();
                     } else {
-                        res.redirect('/user-reports');
+                        const allowedEndpoints = ['report', 'generate-report'];
+                        const isAllowed = allowedEndpoints.find(enpoint => req.path.includes(enpoint));
+                        if (isAllowed) {
+                            next();
+                        } else {
+                            res.status(403).send('Forbidden');
+                        }
                     }
                 } else {
                     res.status(403).send('Forbidden');
