@@ -8,7 +8,7 @@ export class PostgressRepository {
             user: process.env.PGUSER,
             database: process.env.PGDATABASE,
             password: process.env.PGPASSWORD,
-            port: parseInt(process.env.PGPORT) ,
+            port: parseInt(process.env.PGPORT),
             ssl: { rejectUnauthorized: false },
         });
     }

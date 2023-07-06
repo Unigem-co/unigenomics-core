@@ -17,14 +17,13 @@ const app = express();
 app.use(express.json());
 
 const testRouter = Router();
-testRouter.get('test', (_, res) => {
+testRouter.get('/test', (_, res) => {
     res.send('Online :D');
 });
 
-app.get('/api', testRouter);
-
 app.use(authorizationMiddleware);
-app.use(reportGenerator);
+app.use('/api', reportGenerator);
+app.use('/api', testRouter);
 app.use('/api', reports);
 app.use('/api', genotypes);
 app.use('/api', genotypesByReferenceSnp);
