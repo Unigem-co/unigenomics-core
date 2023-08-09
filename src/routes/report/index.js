@@ -90,10 +90,12 @@ router.post(ROUTE, async (req, res) => {
             RETURNING id
         `, [user, reportDate, samplingDate]);
         const reportId = reportResponse.rows[0].id;
-        const valuesQuery = Object.keys(detail).map((_, index) => `($1, $${index * 2 + 2}, $${index * 2 + 3}`).join(',');
         const params = Object.keys(detail).reduce((prev, curr) => ([
-            ...prev, curr, detail[curr].genotype
+            ...prev, 
+            curr, 
+            detail[curr].genotype
         ]), []);
+        const valuesQuery = Object.keys(detail).map((_, index) => `($1, $${index * 2 + 2}, $${index * 2 + 3})`).join(',');
         await postgres.query(`INSERT INTO ${REPORTS_DETAIL_TABLE}(parent, reference_snp, result) VALUES ${valuesQuery}`, [reportId, ...params]);
         res.status(200).send({ message: 'Created' });
     } catch (e) {
