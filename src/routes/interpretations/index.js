@@ -55,7 +55,7 @@ router.post(ROUTE, async (req, res) => {
     const { reference_snp, genotype, interpretation, genotype_effect } = req.body;
     try {
         const response = await postgres.query(
-            `INSERT INTO ${TABLE}(reference_snp, genotype, interpretation) VALUES($1, $2, $3, $5) RETURNING id`, 
+            `INSERT INTO ${TABLE}(reference_snp, genotype, interpretation, genotype_effect) VALUES($1, $2, $3, $4) RETURNING id`, 
             [reference_snp, genotype, interpretation, genotype_effect]
         );
         res.send({ message: 'Created', id: response.rows[0].id });
