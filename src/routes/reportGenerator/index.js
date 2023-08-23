@@ -30,10 +30,10 @@ const RESULT_QUERY = `
     INNER JOIN interpretations
     ON interpretations.genotype = reports_detailed.result
     AND interpretations.reference_snp = reference_snp.id
+	INNER JOIN genotype_effects
+    ON genotype_effects.id = interpretations.genotype_effect
     INNER JOIN genotypes
     ON reports_detailed.result = genotypes.id
-    INNER JOIN genotype_effects
-    ON genotype_effects.id = reports_detailed.genotype_effect
     WHERE reports.id = $1
 `
 
