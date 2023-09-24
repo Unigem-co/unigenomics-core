@@ -13,7 +13,7 @@ const postgres = new PostgressRepository();
 const lib_convert = promisify(libre.convert)
 
 const RESULT_QUERY = `
-    SELECT RIGHT('0000000000' || users.id::text, 10) AS id, users.name, users.name || ' ' || users.last_names as "fullName", 
+    SELECT RIGHT('0000000000' || users.prime_id::text, 10) AS id, users.name, users.name || ' ' || users.last_names as "fullName", 
             users.document_type as "idNumberType", users.document, users.birdth_date as "birthDate",
             reports.report_date as "reportDate", reports.sampling_date as "samplingDate", 
             reference_snp.rs_name as "rs", reference_snp.references as "references",

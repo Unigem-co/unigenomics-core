@@ -55,17 +55,17 @@ router.get(`${ROUTE}/schema`, async (req, res) => {
 
 
 router.post(ROUTE, async (req, res) => {
-    const { name, last_names, document_type, document, birdth_date, role } = req.body;
+    const { name, last_names, document_type, document, birdth_date, role, prime_id } = req.body;
     const salt = await bcrypt.genSalt();
     const newPassword = await bcrypt.hash(document, salt);
     try {
         const response = await postgres.query(
             `
-                INSERT INTO ${TABLE}(name, last_names, document_type, document, birdth_date, password, role) 
-                VALUES ($1, $2, $3, $4, $5, $6, $7)
+                INSERT INTO ${TABLE}(name, last_names, document_type, document, birdth_date, password, role, prime_id) 
+                VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
                 RETURNING id
             `,
-            [name, last_names, document_type, document, birdth_date, newPassword, role]
+            [name, last_names, document_type, document, birdth_date, newPassword, role, prime_id]
         );
         res.json({ message: 'Created', id: response.rows[0].id });
     } catch (e) {
@@ -75,15 +75,15 @@ router.post(ROUTE, async (req, res) => {
 });
 
 router.put(ROUTE, async (req, res) => {
-    const { name, last_names, document_type, document, birdth_date, password, role } = req.body;
+    const { name, last_names, document_type, document, birdth_date, password, role, prime_id } = req.body;
     const salt = await bcrypt.genSalt();
     const newPassword = password
         ? await bcrypt.hash(password, salt)
         : await bcrypt.hash(document, salt);
     try {
         await postgres.query(
-            `UPDATE ${TABLE} SET name=$1, last_names=$2, document_type=$3, document=$4, birdth_date=$5, password=$6, role=$7 WHERE document = $4`,
-            [name, last_names, document_type, document, birdth_date, newPassword, role]
+            `UPDATE ${TABLE} SET name=$1, last_names=$2, document_type=$3, document=$4, birdth_date=$5, password=$6, role=$7, prime_id=$8 WHERE document = $4`,
+            [name, last_names, document_type, document, birdth_date, newPassword, role, prime_id]
         );
         res.json({ message: 'Updated' });
     } catch (e) {
