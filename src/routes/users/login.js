@@ -12,20 +12,20 @@ router.post(ROUTE, async (req, res) => {
     try {
         const userResponse = await postgres.query('SELECT * FROM users WHERE document = $1', [username]);
         const user = userResponse.rows[0];
-        if(user) {
+        if (user) {
             const hashedPassword = await bcrypt.compare(password, user.password);
             if (hashedPassword) {
-                const newUser = {...user};
+                const newUser = { ...user };
                 delete newUser.password;
-                const token = jwt.sign(newUser, user.password, { expiresIn: '3h', });
-                res.status(200).send({token});
+                const token = jwt.sign(newUser, user.password, { ...(user.role === 'admin' ? {} : { expiresIn: '2h' }) });
+                res.status(200).send({ token });
             } else {
                 res.status(401).send('Incorrect user name or password.');
             }
         } else {
             res.status(401).send('Incorrect user name or password.');
         }
-    } catch(error) {
+    } catch (error) {
         res.status(500).send(error);
     }
 });
