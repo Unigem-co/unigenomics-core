@@ -105,13 +105,24 @@ router.post(ROUTE, async (req, res) => {
 });
 
 router.put(ROUTE, async (req, res) => {
-    const { user, reportDate, samplingDate, detail } = req.body;
+    const { reportId, reportDate, samplingDate, detail } = req.body;
     try {
-        await postgres.query(`UPDATE ${REPORTS_TABLE} SET report_date = $1, sampling_date = $3 WHERE "user" = $2`, [reportDate, user, samplingDate]);
-        await Promise.all(Object.keys(detail).map(async key => await postgres.query(
-            `UPDATE ${REPORTS_DETAIL_TABLE} SET reference_snp = $1, result = $2 WHERE "reference_snp" = $1`,
-            [key, detail[key].genotype]
-        )));
+        await postgres.query(`UPDATE ${REPORTS_TABLE} SET report_date = $1, sampling_date = $3 WHERE id = $2`, [reportDate, reportId, samplingDate]);
+        
+        await Promise.all(Object.keys(detail).map(async key => {
+            const exists = await postgres.query(`SELECT COUNT(*) FROM ${REPORTS_DETAIL_TABLE} WHERE "parent" = $1 AND "reference_snp" = $2`, [reportId, key]).rows;
+            if (exists > 0) {
+            await postgres.query(
+                `UPDATE ${REPORTS_DETAIL_TABLE} SET result = $2 WHERE "reference_snp" = $1 AND "parent" = $3`,
+                [key, detail[key].genotype, reportId]
+            )} else {
+                
+                await postgres.query(
+                    `INSERT INTO ${REPORTS_DETAIL_TABLE}("parent", "reference_snp", "result") VALUES($1, $2, $3)`,
+                    [reportId, key, detail[key].genotype]
+                )
+            }
+        }));
         res.status(200).send({ message: 'Updated' });
     } catch (e) {
         console.log(e);
