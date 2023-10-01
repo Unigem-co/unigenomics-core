@@ -91,8 +91,8 @@ router.post(ROUTE, async (req, res) => {
         `, [user, reportDate, samplingDate]);
         const reportId = reportResponse.rows[0].id;
         const params = Object.keys(detail).reduce((prev, curr) => ([
-            ...prev, 
-            curr, 
+            ...prev,
+            curr,
             detail[curr].genotype
         ]), []);
         const valuesQuery = Object.keys(detail).map((_, index) => `($1, $${index * 2 + 2}, $${index * 2 + 3})`).join(',');
@@ -108,19 +108,24 @@ router.put(ROUTE, async (req, res) => {
     const { reportId, reportDate, samplingDate, detail } = req.body;
     try {
         await postgres.query(`UPDATE ${REPORTS_TABLE} SET report_date = $1, sampling_date = $3 WHERE id = $2`, [reportDate, reportId, samplingDate]);
-        
+
         await Promise.all(Object.keys(detail).map(async key => {
-            const exists = await postgres.query(`SELECT COUNT(*) FROM ${REPORTS_DETAIL_TABLE} WHERE "parent" = $1 AND "reference_snp" = $2`, [reportId, key]).rows;
-            if (exists > 0) {
-            await postgres.query(
-                `UPDATE ${REPORTS_DETAIL_TABLE} SET result = $2 WHERE "reference_snp" = $1 AND "parent" = $3`,
-                [key, detail[key].genotype, reportId]
-            )} else {
-                
+            const { rows } = await postgres.query(`
+                SELECT COUNT(*) as "count"
+                FROM ${REPORTS_DETAIL_TABLE} 
+                WHERE ${REPORTS_DETAIL_TABLE}.parent = $1 AND ${REPORTS_DETAIL_TABLE}.reference_snp = $2
+            `, [reportId, key]);
+            console.log(rows[0].count);
+            if (rows[0]?.count === 0) {
                 await postgres.query(
                     `INSERT INTO ${REPORTS_DETAIL_TABLE}("parent", "reference_snp", "result") VALUES($1, $2, $3)`,
                     [reportId, key, detail[key].genotype]
-                )
+                );
+            } else {
+                await postgres.query(
+                    `UPDATE ${REPORTS_DETAIL_TABLE} SET result = $2 WHERE "reference_snp" = $1 AND "parent" = $3`,
+                    [key, detail[key].genotype, reportId]
+                );
             }
         }));
         res.status(200).send({ message: 'Updated' });
