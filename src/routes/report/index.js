@@ -111,12 +111,11 @@ router.put(ROUTE, async (req, res) => {
 
         await Promise.all(Object.keys(detail).map(async key => {
             const { rows } = await postgres.query(`
-                SELECT COUNT(*) as "count"
+                SELECT CAST(COUNT(*) AS INT) as "count"
                 FROM ${REPORTS_DETAIL_TABLE} 
                 WHERE ${REPORTS_DETAIL_TABLE}.parent = $1 AND ${REPORTS_DETAIL_TABLE}.reference_snp = $2
             `, [reportId, key]);
-            console.log(rows[0].count);
-            if (rows[0]?.count === 0) {
+            if (!rows[0]?.count) {
                 await postgres.query(
                     `INSERT INTO ${REPORTS_DETAIL_TABLE}("parent", "reference_snp", "result") VALUES($1, $2, $3)`,
                     [reportId, key, detail[key].genotype]
