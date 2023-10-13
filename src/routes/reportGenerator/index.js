@@ -19,7 +19,9 @@ const RESULT_QUERY = `
             reference_snp.rs_name as "rs", reference_snp.references as "references",
             genotypes.genotype_name as "result",
             interpretations.interpretation as "interpretation",
-            genotype_effects.name as "genotypeEffect"
+            genotype_effects.name as "genotypeEffect",
+            CASE WHEN observations = NULL THEN FALSE ELSE TRUE END as hasObservations,
+            reports.observations
     FROM reports
     INNER JOIN reports_detailed
     ON reports.id = reports_detailed.parent
@@ -70,6 +72,7 @@ const getReportData = async reportId => {
             birthDate: readableDate(reportResult[0].birthDate),
             fullName: reportResult[0].fullName,
             reportDate: readableDate(reportResult[0].reportDate),
+            observations: reportResult[0].observations,
         };
         const results = reportResult.reduce((prev, curr) => ({
             ...prev,

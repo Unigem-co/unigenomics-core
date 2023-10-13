@@ -36,11 +36,12 @@ router.get(ROUTE, async (req, res) => {
 router.get(`${ROUTE}/userReports/:id`, async (req, res) => {
     const { params: { id } } = req;
     try {
-        const reports = (await postgres.query(`SELECT id, report_date, sampling_date FROM ${REPORTS_TABLE} WHERE "user" = $1 ORDER BY report_date DESC`, [id])).rows;
+        const reports = (await postgres.query(`SELECT id, report_date, sampling_date, observations FROM ${REPORTS_TABLE} WHERE "user" = $1 ORDER BY report_date DESC`, [id])).rows;
         const reportsResponse = reports.map(report => ({
             id: report.id,
             report_date: readableDate(report.report_date),
             sampling_date: readableDate(report.sampling_date),
+            observations: report.observations
         }));
         res.json(reportsResponse);
     } catch (error) {
@@ -82,13 +83,13 @@ router.get(`${ROUTE}/schema`, async (req, res) => {
 });
 
 router.post(ROUTE, async (req, res) => {
-    const { user, reportDate, samplingDate, detail } = req.body;
+    const { user, reportDate, samplingDate, observations, detail } = req.body;
     try {
         const reportResponse = await postgres.query(`
-            INSERT INTO ${REPORTS_TABLE}("user", "report_date", "sampling_date") 
-            VALUES ($1, $2, $3)
+            INSERT INTO ${REPORTS_TABLE}("user", "report_date", "sampling_date", "observations") 
+            VALUES ($1, $2, $3, $4)
             RETURNING id
-        `, [user, reportDate, samplingDate]);
+        `, [user, reportDate, samplingDate, observations]);
         const reportId = reportResponse.rows[0].id;
         const params = Object.keys(detail).reduce((prev, curr) => ([
             ...prev,
@@ -105,9 +106,9 @@ router.post(ROUTE, async (req, res) => {
 });
 
 router.put(ROUTE, async (req, res) => {
-    const { reportId, reportDate, samplingDate, detail } = req.body;
+    const { reportId, reportDate, samplingDate, observations, detail } = req.body;
     try {
-        await postgres.query(`UPDATE ${REPORTS_TABLE} SET report_date = $1, sampling_date = $3 WHERE id = $2`, [reportDate, reportId, samplingDate]);
+        await postgres.query(`UPDATE ${REPORTS_TABLE} SET report_date = $1, sampling_date = $3, observations = $4 WHERE id = $2`, [reportDate, reportId, samplingDate, observations]);
 
         await Promise.all(Object.keys(detail).map(async key => {
             const { rows } = await postgres.query(`
