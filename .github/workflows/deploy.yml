@@ -5,14 +5,34 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
-      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
-      - name: Check out repository code
-        uses: actions/checkout@v4
-      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
-      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
-      - name: List files in the repository
-        run: |
-          ls ${{ github.workspace }}
-      - run: echo "🍏 This job's status is ${{ job.status }}."
+      - uses: actions/checkout@v3
+      - name: Read nvmrc
+        run: echo "##[set-output name=NVMRC;]$(cat .nvmrc)"
+        id: nvm
+      - name: Use Node.js (.nvmrc)
+        uses: actions/setup-node@v3
+        with:
+          node-version: "${{ steps.nvm.outputs.NVMRC }}"
+      - name: Install dependencies
+        run: npm ci
+      - name: Build
+        run: npm run build
+      - name: Deploy Code
+        uses: BetaHuhn/do-spaces-action@v2
+        with:
+          access_key: ${{ secrets.DIGITALOCEANACCESSKEY}}
+          secret_key: ${{ secrets.DIGITALOCEANSECRETKEY }}
+          space_name: ${{ secrets.DIGITALOCEANSPACENAME }}
+          space_region: ${{ secrets.DIGITALOCEANREGION }}
+          source: dist
+          out_dir: ${{ secrets.COREDIR }}/test
+
+      - name: Deploy Public Files
+        uses: BetaHuhn/do-spaces-action@v2
+        with:
+          access_key: ${{ secrets.DIGITALOCEANACCESSKEY}}
+          secret_key: ${{ secrets.DIGITALOCEANSECRETKEY }}
+          space_name: ${{ secrets.DIGITALOCEANSPACENAME }}
+          space_region: ${{ secrets.DIGITALOCEANREGION }}
+          source: public
+          out_dir: ${{ secrets.COREDIR }}/test
