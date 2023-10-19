@@ -1,8 +1,8 @@
-name: Deploy Unigenomics Core
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+name: Deploy
+run-name: ${{ github.actor }} is deployin unigenomics-core 🚀
 on: [workflow_dispatch]
 jobs:
-  Explore-GitHub-Actions:
+  Deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -20,7 +20,7 @@ jobs:
       - name: Deploy Code
         uses: BetaHuhn/do-spaces-action@v2
         with:
-          access_key: ${{ secrets.DIGITALOCEANACCESSKEY}}
+          access_key: ${{ secrets.DIGITALOCEANACCESSKEY }}
           secret_key: ${{ secrets.DIGITALOCEANSECRETKEY }}
           space_name: ${{ secrets.DIGITALOCEANSPACENAME }}
           space_region: ${{ secrets.DIGITALOCEANREGION }}
