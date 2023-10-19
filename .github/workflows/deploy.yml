@@ -1,5 +1,5 @@
 name: Deploy
-run-name: ${{ github.actor }} is deployin unigenomics-core 🚀
+run-name: Deploy 🚀
 on: [workflow_dispatch]
 jobs:
   Deploy:
@@ -25,7 +25,7 @@ jobs:
           space_name: ${{ secrets.DIGITALOCEANSPACENAME }}
           space_region: ${{ secrets.DIGITALOCEANREGION }}
           source: dist
-          out_dir: ${{ secrets.COREDIR }}/test
+          out_dir: ${{ secrets.COREDIR }}
 
       - name: Deploy Public Files
         uses: BetaHuhn/do-spaces-action@v2
@@ -35,4 +35,4 @@ jobs:
           space_name: ${{ secrets.DIGITALOCEANSPACENAME }}
           space_region: ${{ secrets.DIGITALOCEANREGION }}
           source: public
-          out_dir: ${{ secrets.COREDIR }}/test
+          out_dir: ${{ secrets.COREDIR }}
