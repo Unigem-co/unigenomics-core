@@ -13,7 +13,11 @@ export class PostgressRepository {
         });
     }
     async query(query, values) {
-        const response = await this.pool.query(query, values);
-        return response;
+        try {
+            const response = await this.pool.query(query, values);
+            return response;
+        } catch(error) {
+            throw error;
+        }        
     }
 }
