@@ -24,7 +24,14 @@ router.get(ROUTE, async (req, res) => {
 router.get(`${ROUTE}/id/:id`, async (req, res) => {
     const { id } = req.params;
     try {
-        const response = await postgres.query(`SELECT * FROM ${TABLE} WHERE reference_snp = $1`, [id]);
+        const response = await postgres.query(`
+            SELECT DISTINCT
+                genotypes.id as genotype,
+                genotypes.genotype_name
+            FROM interpretations
+            INNER JOIN genotypes ON interpretations.genotype = genotypes.id
+            WHERE interpretations.reference_snp = $1
+        `, [id]);
         res.json(response.rows);
     } catch (e) {
         res.status(500).send(e);

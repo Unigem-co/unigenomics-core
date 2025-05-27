@@ -9,9 +9,33 @@ const ROUTE = '/referenceSnp';
 
 router.get(ROUTE, async (req, res) => {
     try {
-        const response = await postgres.query(`SELECT * FROM ${TABLE}`);
-        res.json(response.rows);
+        const response = await postgres.query(`
+            SELECT 
+                rs.id,
+                rs.rs_name,
+                rs.references,
+                json_agg(
+                    json_build_object(
+                        'genotype_id', g.id,
+                        'genotype_name', g.genotype_name
+                    )
+                ) as genotypes
+            FROM ${TABLE} rs
+            LEFT JOIN interpretations i ON i.reference_snp = rs.id
+            LEFT JOIN genotypes g ON g.id = i.genotype
+            GROUP BY rs.id, rs.rs_name, rs.references
+            ORDER BY rs.rs_name
+        `);
+        
+        // Transform the response to handle null genotypes
+        const transformedResponse = response.rows.map(row => ({
+            ...row,
+            genotypes: row.genotypes[0] === null ? [] : row.genotypes
+        }));
+        
+        res.json(transformedResponse);
     } catch (e) {
+        console.error('Error fetching reference SNPs:', e);
         res.status(500).send(e);
     }
 });
