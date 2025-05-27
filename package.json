@@ -7,7 +7,8 @@
     "build": "babel ./src -d dist/",
     "start": "npm install && NODE_ENV=development nodemon --exec babel-node ./src/index.js",
     "deploy": "npm install && npm run build && npm run serve:stop && NODE_ENV=production forever start ./dist/index.js",
-    "serve:stop": "forever stop ./dist/index.js"
+    "serve:stop": "forever stop ./dist/index.js",
+    "serve:start": "forever start ./dist/index.js"
   },
   "keywords": [
     "unigenomics"
