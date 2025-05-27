@@ -44,7 +44,57 @@ router.get(`${ROUTE}/findResultInterpretation/:rs/:genotype`, async (req, res) =
 router.get(`${ROUTE}/schema`, async (req, res) => {
     try {
         const response = await postgres.query(schemaQuery(TABLE));
-        res.json(response.rows);
+        // Transform the schema to include display configuration and field types
+        const transformedSchema = response.rows.map(col => {
+            const base = {
+                column_name: col.column_name,
+                data_type: col.data_type,
+                type: col.data_type,
+                config: {}
+            };
+
+            // Add specific configurations based on column name
+            switch (col.column_name) {
+                case 'reference_snp':
+                    base.display_name = 'RS ID';
+                    base.type = 'select';
+                    base.config = {
+                        flex: 1,
+                        minWidth: 150
+                    };
+                    break;
+                case 'genotype':
+                    base.display_name = 'Genotipo';
+                    base.type = 'select';
+                    base.config = {
+                        flex: 1,
+                        minWidth: 150
+                    };
+                    break;
+                case 'genotype_effect':
+                    base.display_name = 'Efecto del Genotipo';
+                    base.type = 'select';
+                    base.config = {
+                        flex: 1,
+                        minWidth: 150
+                    };
+                    break;
+                case 'interpretation':
+                    base.display_name = 'Interpretación';
+                    base.type = 'text';
+                    base.config = {
+                        flex: 2,
+                        minWidth: 300
+                    };
+                    break;
+                default:
+                    base.display_name = col.column_name;
+            }
+
+            return base;
+        });
+
+        res.json(transformedSchema);
     } catch (e) {
         res.status(500).send(e);
     }

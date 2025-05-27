@@ -26,6 +26,7 @@ router.post(ROUTE, async (req, res) => {
             res.status(401).send('Incorrect user name or password.');
         }
     } catch (error) {
+        console.log("Error during login:", error);
         res.status(500).send(error);
     }
 });
