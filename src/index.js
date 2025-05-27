@@ -7,6 +7,7 @@ import genotypesEffects from './routes/genotypesEffects';
 import interpretations from './routes/interpretations';
 import referenceSnp from './routes/referenceSnp';
 import { login, users } from './routes/users';
+import cors from 'cors';
 
 import dotenv from 'dotenv';
 import authorizationMiddleware from './routes/authorizationMiddleware';
@@ -15,6 +16,9 @@ dotenv.config();
 
 const app = express();
 app.use(express.json());
+app.use(cors({
+    origin: '*',
+}));
 
 // CORS middleware
 app.use((req, res, next) => {
