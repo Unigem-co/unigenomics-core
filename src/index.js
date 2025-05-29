@@ -17,27 +17,29 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 
-// CORS middleware - Allow all hosts
-app.use((req, res, next) => {
-    const allowedOrigins = process.env.ALLOWED_ORIGINS ? 
-        [process.env.ALLOWED_ORIGINS.split(','), 'http://127.0.0.1:80'] : 
-        ['http://0.0.0.0:3000'];
-    
-    const origin = req.headers.origin;
-    if (allowedOrigins.includes(origin)) {
-        res.header('Access-Control-Allow-Origin', origin);
-    }
-    
-    res.header('Access-Control-Allow-Credentials', 'true');
-    res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
-    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
+// CORS configuration
+const corsOptions = {
+    origin: [
+        'http://localhost:3000',
+        'http://127.0.0.1:3000',
+        'http://localhost:3001',
+        'http://localhost:80',
+        'http://127.0.0.1:80',
+        'http://localhost',
+        'http://127.0.0.1'
+    ],
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'Accept'],
+    preflightContinue: false,
+    optionsSuccessStatus: 204
+};
 
-    // Handle OPTIONS requests
-    if (req.method === 'OPTIONS') {
-        return res.sendStatus(200);
-    }
-    next();
-});
+// Use CORS middleware with configuration
+app.use(cors(corsOptions));
+
+// Handle OPTIONS requests globally
+app.options('*', cors(corsOptions));
 
 const testRouter = Router();
 testRouter.get('/test', (_, res) => {
